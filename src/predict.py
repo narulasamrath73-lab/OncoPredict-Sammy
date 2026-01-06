@@ -45,9 +45,9 @@ prediction = model.predict(user_scaled)
 probability = model.predict_proba(user_scaled)[0][1] * 100
 
 if prediction[0] == 1:
-    print("Cancer Detected")
+    print("Cancer is being Detected")
 else:
-    print("No Cancer Detected")
+    print("No Cancer Detectionn probability is found")
 
 print(f"Risk Probability: {round(probability,2)}%")
 
